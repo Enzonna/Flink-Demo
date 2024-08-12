@@ -1,4 +1,4 @@
-package com.enzo.day02;
+package com.enzo.flink.day02;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.MapFunction;
@@ -13,17 +13,32 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
 
 /**
- * 并行度
+ * 算子链
+ * 在Flink中，并行度相同的一对一（one to one）算子操作，可以直接链接在一起形成一个“大”的任务（task）
+ * 这样原来的算子就成为了真正任务里的一部分，这样的技术被称为“算子链”（Operator Chain）
+ * 算子链是Flink提供一种非常有效的优化手段，不需要我们做什么处理，默认就会进行合并
+ * 前提：
+ * 算子间必须是one-to-one的关系
+ * 并行度相同
+ * 不能存在重分区操作
+ * <p>
+ * 禁用算子链
+ * <p>
+ * 全局禁用算子链 env.disableOperatorChaining();
+ * <p>
+ * 算子禁用  算子.disableChaining()
+ * <p>
+ * 开始新链  算子..startNewChain()
  */
-public class Flink01_Par {
+public class Flink02_OpeChain {
     public static void main(String[] args) throws Exception {
         // 1. 指定流处理环境
         // StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         Configuration conf = new Configuration();
-        conf.set(RestOptions.PORT, 8083);
+        conf.set(RestOptions.PORT, 8081);
         StreamExecutionEnvironment env = StreamExecutionEnvironment.createLocalEnvironmentWithWebUI(conf);
 
-        env.setParallelism(3);
+        env.setParallelism(2);
 
         // 2. 从指定的网络端口读取数据
         DataStreamSource<String> sockDS = env.socketTextStream("fastfood102", 8888);

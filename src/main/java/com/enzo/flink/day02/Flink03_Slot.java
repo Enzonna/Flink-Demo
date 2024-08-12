@@ -1,4 +1,4 @@
-package com.enzo.day02;
+package com.enzo.flink.day02;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.MapFunction;
