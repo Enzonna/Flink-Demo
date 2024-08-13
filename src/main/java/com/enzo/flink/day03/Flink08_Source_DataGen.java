@@ -32,6 +32,7 @@ public class Flink08_Source_DataGen {
             }
         });
 
+
         ds.print();
         env.execute();
     }
