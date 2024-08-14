@@ -1,0 +1,44 @@
+package com.enzo.flink.day05;
+
+import com.enzo.flink.bean.WaterSensor;
+import com.enzo.flink.func.WaterSensorMapFunction;
+import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.flink.streaming.api.datastream.DataStreamSource;
+import org.apache.flink.streaming.api.datastream.KeyedStream;
+import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
+import org.apache.flink.streaming.api.datastream.WindowedStream;
+import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+import org.apache.flink.streaming.api.functions.windowing.WindowFunction;
+import org.apache.flink.streaming.api.windowing.assigners.TumblingProcessingTimeWindows;
+import org.apache.flink.streaming.api.windowing.time.Time;
+import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
+import org.apache.flink.util.Collector;
+
+public class Flink08_Window_Apply {
+    public static void main(String[] args) throws Exception {
+        StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+        DataStreamSource<String> sockDS = env.socketTextStream("fastfood102", 8888);
+        SingleOutputStreamOperator<WaterSensor> wsDS = sockDS.map(new WaterSensorMapFunction());
+        KeyedStream<WaterSensor, String> keyedDS = wsDS.keyBy(data -> data.id);
+
+
+        // 对分组后的数据进行开窗
+        WindowedStream<WaterSensor, String, TimeWindow> windowDS
+                = keyedDS.window(TumblingProcessingTimeWindows.of(Time.seconds(10)));
+
+        SingleOutputStreamOperator<String> applyDS = windowDS.apply(
+                new WindowFunction<WaterSensor, String, String, TimeWindow>() {
+                    @Override
+                    public void apply(String s, TimeWindow window, Iterable<WaterSensor> input, Collector<String> out) throws Exception {
+                        String windowStart = DateFormatUtils.format(window.getStart(), "yyyy-MM-dd HH:mm:ss");
+                        String windowEnd = DateFormatUtils.format(window.getEnd(), "yyyy-MM-dd HH:mm:ss");
+                        long count = input.spliterator().estimateSize();
+                        out.collect("key=" + s + "的窗口[" + windowStart + "," + windowEnd + ")包含" + count + "条数据===>" + input.toString());
+                    }
+                }
+        );
+
+        applyDS.print();
+        env.execute();
+    }
+}
