@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d229914c-0784-428f-ab73-4d5e5cfd94cd" name="Changes" comment="2024-08-13 不要温和地走进那个良夜">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink01_Kafka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink02_Sink_Jdbc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink03_Sink_Custom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink04_Window_API.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink05_Window_Assi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink06_Window_Ass_Red.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink07_Window_Aggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink08_Window_Apply.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink09_Window_Aggregate_Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/Flink09_Window_Process.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/func/MySinkFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day06/Flink01_Window_ProcessTime_Tum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day06/Flink03_Window_ProcessTime_Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day06/Flink03_Window_ProcessTime_Slid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day06/Flink04_Window_Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day06/Flink05_Window_Event_WatermarkGen_Monotonous.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day06/Flink06_Window_Event_WatermarkGen_BoundOutOf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +53,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/atguigu/22-Flink1.17/flink-demo/src/main/java/com/enzo/flink/day04",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Language Defaults"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/atguigu/22-Flink1.17/flink-exam&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\atguigu\22-Flink1.17\flink-demo\src\main\java\com\enzo\flink\day04" />
@@ -79,18 +72,19 @@
       <recent name="F:\atguigu\22-Flink1.17\flink-demo\src\main\java\com\enzo\flink\day03" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.enzo.flink.day06" />
       <recent name="com.enzo.flink.day05" />
       <recent name="com.enzo.flink.day03" />
       <recent name="com.enzo.day02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Flink09_Window_Aggregate_Process (1)">
-    <configuration name="Flink08_Window_Apply (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day05.Flink08_Window_Apply" />
+  <component name="RunManager" selected="Application.Flink06_Window_Event_WatermarkGen_BoundOutOf">
+    <configuration name="Flink03_Window_ProcessTime_Session" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day06.Flink03_Window_ProcessTime_Session" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day05.*" />
+          <option name="PATTERN" value="com.enzo.flink.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +92,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink08_Window_Apply" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day05.Flink08_Window_Apply" />
+    <configuration name="Flink03_Window_ProcessTime_Slid" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day06.Flink03_Window_ProcessTime_Slid" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day05.*" />
+          <option name="PATTERN" value="com.enzo.flink.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink09_Window_Aggregate_Process (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day05.Flink09_Window_Aggregate_Process" />
+    <configuration name="Flink04_Window_Count" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day06.Flink04_Window_Count" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day05.*" />
+          <option name="PATTERN" value="com.enzo.flink.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +118,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink09_Window_Aggregate_Process" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day05.Flink09_Window_Aggregate_Process" />
+    <configuration name="Flink05_Window_Event_WatermarkGen_Monotonous" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day06.Flink05_Window_Event_WatermarkGen_Monotonous" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day05.*" />
+          <option name="PATTERN" value="com.enzo.flink.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +131,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink09_Window_Process" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day05.Flink09_Window_Process" />
+    <configuration name="Flink06_Window_Event_WatermarkGen_BoundOutOf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day06.Flink06_Window_Event_WatermarkGen_BoundOutOf" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day05.*" />
+          <option name="PATTERN" value="com.enzo.flink.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Flink09_Window_Aggregate_Process (1)" />
-        <item itemvalue="Application.Flink09_Window_Aggregate_Process" />
-        <item itemvalue="Application.Flink09_Window_Process" />
-        <item itemvalue="Application.Flink08_Window_Apply" />
-        <item itemvalue="Application.Flink08_Window_Apply (1)" />
+        <item itemvalue="Application.Flink06_Window_Event_WatermarkGen_BoundOutOf" />
+        <item itemvalue="Application.Flink05_Window_Event_WatermarkGen_Monotonous" />
+        <item itemvalue="Application.Flink04_Window_Count" />
+        <item itemvalue="Application.Flink03_Window_ProcessTime_Session" />
+        <item itemvalue="Application.Flink03_Window_ProcessTime_Slid" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +177,13 @@
       <workItem from="1723543434886" duration="2298000" />
       <workItem from="1723546313168" duration="3869000" />
       <workItem from="1723594965829" duration="1156000" />
-      <workItem from="1723596129095" duration="24116000" />
+      <workItem from="1723596129095" duration="27100000" />
+      <workItem from="1723690328026" duration="471000" />
+      <workItem from="1723701490412" duration="3658000" />
+      <workItem from="1723710604869" duration="208000" />
+      <workItem from="1723710917815" duration="2007000" />
+      <workItem from="1723768865527" duration="8652000" />
+      <workItem from="1723808628964" duration="4037000" />
     </task>
     <task id="LOCAL-00001" summary="2024-08-09">
       <created>1723182896472</created>
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1723539636703</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2024-08-13 不要温和地走进那个良夜">
+      <created>1723633168342</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723633168342</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
