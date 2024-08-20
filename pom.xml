@@ -92,6 +92,12 @@
             <artifactId>flink-connector-jdbc</artifactId>
             <version>3.1.0-1.17</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
 
 
     </dependencies>
