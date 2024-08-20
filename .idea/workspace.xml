@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d229914c-0784-428f-ab73-4d5e5cfd94cd" name="Changes" comment="2024-08-16 不要温和地走进那个良夜">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/bean/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/bean/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day05/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day06/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day07/Flink01_Watermark_Custom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day07/Flink02_Watermark_Pass_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day07/Flink03_Watermark_Pass_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day07/Flink04_Window_Late.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day07/Flink05_Windows_Join.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day07/Flink06_IntervalJoin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day07/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day08/Flink01_Timer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day08/Flink02_TopN_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day08/Flink03_TopN_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day08/Flink04_KeyedState_ValueState_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day08/Flink05_KeyedState_ValueState_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day08/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day09/Flink01_KeyedState_ListState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day09/Flink02_KeyedState_MapState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day09/Flink03_KeyedState_ReducingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day09/Flink04_KeyedState_AggregatingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day09/Flink05_KeyedState_TTL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day09/Flink06_OperState_ListState_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day09/Flink07_OperState_ListState_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day09/Flink08_OpeState_broadcastState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day08/Flink05_KeyedState_ValueState_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/enzo/flink/day08/Flink05_KeyedState_ValueState_2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +65,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;F:/atguigu/22-Flink1.17/flink-demo/src/main/java/com/enzo/flink/day08&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Language Defaults&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -85,20 +77,20 @@
       <recent name="F:\atguigu\22-Flink1.17\flink-demo\src\main\java\com\enzo\flink\day04" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.enzo.flink.day09" />
       <recent name="com.enzo.flink.day08" />
       <recent name="com.enzo.flink.bean" />
       <recent name="com.enzo.flink.day07" />
       <recent name="com.enzo.flink.day06" />
-      <recent name="com.enzo.flink.day05" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Flink03_TopN_2">
-    <configuration name="Flink02_TopN_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink02_TopN_1" />
+  <component name="RunManager" selected="Application.Flink05_Window_Event_WatermarkGen_Monotonous (2)">
+    <configuration name="Flink05_KeyedState_TTL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day09.Flink05_KeyedState_TTL" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
+          <option name="PATTERN" value="com.enzo.flink.day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink02_TopN_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink02_TopN_1" />
+    <configuration name="Flink05_KeyedState_TTL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day09.Flink05_KeyedState_TTL" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
+          <option name="PATTERN" value="com.enzo.flink.day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink02_TopN_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink02_TopN_1" />
+    <configuration name="Flink05_Window_Event_WatermarkGen_Monotonous (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day06.Flink05_Window_Event_WatermarkGen_Monotonous" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
+          <option name="PATTERN" value="com.enzo.flink.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink02_TopN_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink02_TopN_1" />
+    <configuration name="Flink05_Window_Event_WatermarkGen_Monotonous (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day06.Flink05_Window_Event_WatermarkGen_Monotonous" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
+          <option name="PATTERN" value="com.enzo.flink.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink03_TopN_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink03_TopN_2" />
+    <configuration name="Flink05_Window_Event_WatermarkGen_Monotonous" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day06.Flink05_Window_Event_WatermarkGen_Monotonous" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
+          <option name="PATTERN" value="com.enzo.flink.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,12 +150,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink04_KeyedState_ValueState_1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink04_KeyedState_ValueState_1" />
+    <configuration name="Flink06_OperState_ListState_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day09.Flink06_OperState_ListState_1" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
+          <option name="PATTERN" value="com.enzo.flink.day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,38 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Flink04_KeyedState_ValueState_1 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink04_KeyedState_ValueState_1" />
+    <configuration name="Flink08_OpeState_broadcastState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day09.Flink08_OpeState_broadcastState" />
       <module name="flink-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Flink04_KeyedState_ValueState_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink04_KeyedState_ValueState_1" />
-      <module name="flink-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Flink05_KeyedState_ValueState_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.enzo.flink.day08.Flink05_KeyedState_ValueState_2" />
-      <module name="flink-demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.enzo.flink.day08.*" />
+          <option name="PATTERN" value="com.enzo.flink.day09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -212,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Flink03_TopN_2" />
-        <item itemvalue="Application.Flink05_KeyedState_ValueState_2" />
-        <item itemvalue="Application.Flink04_KeyedState_ValueState_1 (2)" />
-        <item itemvalue="Application.Flink04_KeyedState_ValueState_1 (1)" />
-        <item itemvalue="Application.Flink04_KeyedState_ValueState_1" />
+        <item itemvalue="Application.Flink05_Window_Event_WatermarkGen_Monotonous (2)" />
+        <item itemvalue="Application.Flink05_Window_Event_WatermarkGen_Monotonous (1)" />
+        <item itemvalue="Application.Flink05_Window_Event_WatermarkGen_Monotonous" />
+        <item itemvalue="Application.Flink08_OpeState_broadcastState" />
+        <item itemvalue="Application.Flink06_OperState_ListState_1" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +227,11 @@
       <workItem from="1724049501378" duration="7285000" />
       <workItem from="1724060821976" duration="6737000" />
       <workItem from="1724069400757" duration="599000" />
-      <workItem from="1724114141141" duration="1044000" />
+      <workItem from="1724114141141" duration="6363000" />
+      <workItem from="1724120519661" duration="211000" />
+      <workItem from="1724120829675" duration="4970000" />
+      <workItem from="1724126377075" duration="155000" />
+      <workItem from="1724132487507" duration="6999000" />
     </task>
     <task id="LOCAL-00001" summary="2024-08-09">
       <created>1723182896472</created>
@@ -312,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1723815284173</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2024-08-16 不要温和地走进那个良夜">
+      <created>1724115196143</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724115196143</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

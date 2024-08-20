@@ -99,6 +99,13 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- rocksdb -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-statebackend-rocksdb</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
+
 
     </dependencies>
 
